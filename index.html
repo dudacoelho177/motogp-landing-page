@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Informa ao navegador que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
+<!-- Define o idioma principal da página como português do Brasil -->
+
+<head>
+    <!-- Área de configurações da página -->
+
+    <meta charset="UTF-8">
+    <!-- Permite o uso correto de acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar melhor a celulares, tablets e computadores -->
+
+    <title>MotoGP Landing Page</title>
+    <!-- Define o texto que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Conecta o arquivo CSS externo com o HTML -->
+</head>
+
+<body>
+    <!-- Contém todo o conteúdo visível da página -->
+
+    <header class="hero">
+        <!-- Cabeçalho principal da página.
+             A classe "hero" será usada para estilizar esta área no CSS -->
+
+        <div class="hero-content">
+            <!-- Agrupa o conteúdo interno da seção principal -->
+
+            <p class="tag">VELOCIDADE • ADRENALINA • MOTOGP</p>
+            <!-- Pequeno texto de destaque acima do título -->
+
+            <h1>O mundo da MotoGP em alta velocidade</h1>
+            <!-- Título principal da página -->
+
+            <p class="hero-text">
+                Conheça curiosidades, pilotos e a emoção de uma das categorias mais rápidas do motociclismo.
+            </p>
+            <!-- Texto introdutório da página -->
+
+            <button id="curiosityButton">
+                Mostrar curiosidade
+            </button>
+            <!-- Botão que será utilizado pelo JavaScript.
+                 O id permite localizar esse elemento no script -->
+
+            <p id="curiosityText"></p>
+            <!-- Parágrafo inicialmente vazio.
+                 O JavaScript colocará uma curiosidade aqui -->
+        </div>
+         <div class="hero-image-box">
+        <!-- Caixa da imagem -->
+
+        <img
+            src="img/valentino-rossi.jpg"
+            alt="Valentino Rossi em sua moto na MotoGP"
+            class="hero-image"
+            title="The Doctor"
+        >
+        <!-- Imagem do Valentino Rossi -->
+        <!-- O atributo title já mostra um textinho ao passar o mouse -->
+
+        <div class="image-overlay">
+            The Doctor
+        </div>
+        <!-- Texto que aparece sobre a imagem ao passar o mouse -->
+    </div>
+    </header>
+
+    <main>
+        <!-- Área principal de conteúdo da página -->
+
+        <section class="about">
+            <!-- Seção que apresenta informações sobre a MotoGP -->
+
+            <h2>Sobre a MotoGP</h2>
+            <!-- Título da seção -->
+
+            <p>
+                A MotoGP é a principal categoria do Campeonato Mundial de Motovelocidade,
+                reunindo alguns dos pilotos mais rápidos do mundo.
+            </p>
+            <!-- Texto explicativo -->
+        </section>
+
+        <section class="cards">
+            <!-- Seção que agrupa os cards de informação -->
+
+            <article class="card">
+                <!-- Primeiro card -->
+
+                <h3>🏍️ Velocidade</h3>
+                <p>As motos da MotoGP podem ultrapassar os 350 km/h.</p>
+            </article>
+
+            <article class="card">
+                <!-- Segundo card -->
+
+                <h3>🏁 Corridas</h3>
+                <p>O campeonato acontece em circuitos de diversos países.</p>
+            </article>
+
+            <article class="card">
+                <!-- Terceiro card -->
+
+                <h3>🔥 Competição</h3>
+                <p>Pilotos e equipes disputam cada ponto durante toda a temporada.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+
+        <p>Projeto desenvolvido por Eduarda Coelho 🏍️.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Conecta o arquivo JavaScript externo.
+         Ele fica no final do body para que o HTML carregue antes do script -->
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+/* Seleciona todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #f5f5f5;
+}
+
+/* Área principal do topo */
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 10%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.85)
+    );
+    flex-wrap: wrap;
+}
+
+/* Área do texto principal */
+.hero-content {
+    max-width: 600px;
+}
+
+/* Texto pequeno acima do título */
+.tag {
+    color: #e10600;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Texto abaixo do título */
+.hero-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Botão */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e10600;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Cor do botão ao passar o mouse */
+button:hover {
+    background-color: #b80500;
+}
+
+/* Texto da curiosidade */
+#curiosityText {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Caixa da imagem */
+.hero-image-box {
+    position: relative;
+    width: 320px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+/* Imagem */
+.hero-image {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* Texto sobre a imagem */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 14px;
+}
+
+/* Quando passar o mouse na imagem, mostra o texto */
+.hero-image-box:hover .image-overlay {
+    opacity: 1;
+}
+
+/* Área principal da página */
+main {
+    padding: 60px 10%;
+}
+
+/* Seção "Sobre a MotoGP" */
+.about {
+    margin-bottom: 50px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* Área dos cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card individual */
+.card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #1d1d1d;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #090909;
+    color: #aaa;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .hero-image-box {
+        width: 100%;
+    }
+}
